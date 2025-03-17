@@ -7,3 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+invalid_book = Book.new
+invalid_book.title = 'the boat'
+invalid_book.synopsis = 'On the river, @ the island'
+invalid_book.published_at = Time.now + 5.years
+invalid_book.save!(validate: false)

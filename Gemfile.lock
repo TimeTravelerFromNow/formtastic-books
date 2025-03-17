@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/TimeTravelerFromNow/formtastic
+  revision: 0168a4179b039d62f10ae08edc31f5f94fec1c49
+  branch: inline-errors-accessibility
+  specs:
+    formtastic (5.0.0)
+      actionpack (>= 6.0.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -105,8 +113,6 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.1)
-    formtastic (5.0.0)
-      actionpack (>= 6.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -280,7 +286,7 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
-  formtastic (= 5.0.0)
+  formtastic (= 5.0.0)!
   importmap-rails
   jbuilder
   puma (>= 5.0)

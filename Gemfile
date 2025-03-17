@@ -26,7 +26,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem "formtastic", "5.0.0"
+gem "formtastic", "5.0.0", git: 'https://github.com/TimeTravelerFromNow/formtastic', branch: 'inline-errors-accessibility'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

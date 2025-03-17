@@ -13,3 +13,48 @@
  *= require_tree .
  *= require_self
  */
+
+:root{
+   font-family: 'verdana';
+}
+.error-summary {
+  color: red;
+  border-style: solid;
+  padding: 1rem;
+}
+
+.error-summary ul {
+  list-style-type: none;
+  padding: 0;
+  color: inherit;
+}
+.error-summary ul li a {
+  color: red;
+}
+
+.inline-errors {
+  color: red;
+}
+
+input, button, textarea, select {
+ font: inherit;
+}
+
+form {
+ max-width: 600px;
+ margin: 20px;
+}
+
+.input {
+ margin-bottom: 1em;
+}
+
+label {
+ display: block;
+ margin-bottom: 0.5em;
+}
+
+input, select, textarea {
+ width: 100%;
+ padding: 0.5em;
+}

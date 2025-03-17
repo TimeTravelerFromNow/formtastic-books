@@ -10,3 +10,9 @@ The form validations will be arbitrary, but still try to convey meaning like a r
 
 * Database initialization
 
+Make sure to follow these steps to get started with form locally
+
+`bundle install`
+`rails db:migrate`
+`rails db:seed` # creates a book with everything intentionally invalid for testing
+`rails s`, then go to `https://localhost:3000` in your browser
