@@ -1,10 +1,9 @@
 class Book < ApplicationRecord
-  before_save :validation_creates_base_error
   validates_presence_of :title, :synopsis, :isbn
   validate :validate_all_fields
 
   def validation_creates_base_error
-    errors.add(:base, 'Pretend error: The API is down :,(')
+    errors.add(:base, 'one :base err: Pretend error: The API is down :,(')
   end
 
   def validation_creates_many_base_errors
@@ -13,8 +12,7 @@ class Book < ApplicationRecord
   end
 
   def validate_all_fields
-    # validation_creates_base_error
-    validation_creates_many_base_errors
+    validation_creates_base_error
     validate_title_cant_start_with_the
     validate_synopsis_cannot_contain_special_chars
     validate_published_before_now
