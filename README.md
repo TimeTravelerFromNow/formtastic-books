@@ -6,7 +6,7 @@ The form validations will be arbitrary, but still try to convey meaning like a r
 
 * Ruby version 3.2.0
 
-* System dependencies Rails 7.1.5
+* Rails 8.0.2
 
 * Database initialization
 
