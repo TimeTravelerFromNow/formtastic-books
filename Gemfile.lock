@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/TimeTravelerFromNow/formtastic
-  revision: 148ef1459261579320c06a9c978c7ea96540d2b4
-  branch: semantic-errors-helpers
+  revision: 25e84dcb5a1f30b6581b10f02130b69cb75e6e30
+  branch: inline-errors-accessibility
   specs:
     formtastic (5.0.0)
       actionpack (>= 7.2.0)

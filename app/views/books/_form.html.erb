@@ -3,12 +3,12 @@
   <%= semantic_form_for book do |f| %>
 
     <% if book.errors.any? %>
-        <div class='error-summary'>
-          <h3 id="error_summary">
-            There were errors saving this book
-          </h3>
-          <%= f.semantic_errors :title, :synopsis, :isbn, :publish_year, { 'aria-describedby': 'error_summary' }  %>
-        </div>
+      <div class='error-summary'>
+        <h3 id="error_summary">
+          There were errors saving this book
+        </h3>
+        <%= f.semantic_errors :title, :synopsis, :isbn, :publish_year, { 'aria-describedby': 'error_summary' }  %>
+      </div>
     <% end %>
 
     <%= f.inputs name: "Book cover" do %>

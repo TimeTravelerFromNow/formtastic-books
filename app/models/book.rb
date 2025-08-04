@@ -1,6 +1,7 @@
 class Book < ApplicationRecord
   validates_presence_of :title, :synopsis, :isbn
   validate :validate_all_fields
+  validates :isbn, numericality: { greater_than: 0 }
 
   def validation_creates_base_error
     errors.add(:base, 'one :base err: Pretend error: The API is down :,(')
